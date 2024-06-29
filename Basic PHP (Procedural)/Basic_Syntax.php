@@ -10,7 +10,7 @@ print ('Hello world'); // Hello world
 echo 'Hello', ' ', 'world';  // Hello world    also we can use for 'print'
 echo "berhan's Invoice"; // berhan's Invoice
 echo 'berhan\'s Invoice'; // berhan's Invoice
-//variable
+//variable_Syntax
 $num = '12';   // correct
 $_24num='12';  // correct  it must be start from '_' or alphabet.
 
@@ -27,6 +27,7 @@ echo $y; // 5
 $name='berhan';
 echo 'Hello $name'; // Hello $name
 echo 'Hello'.$name; // Hello berhan
+echo 'Hello',$name; // Hello berhan
 echo "Hello $name"; // Hello berhan
 echo "Hello {$name}"; // Hello berhan
 ?>
