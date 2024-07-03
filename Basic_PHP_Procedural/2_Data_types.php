@@ -14,7 +14,7 @@
 
     echo $completed; // 1
     echo $complete; // ''
-    echo gettype($completed);  // boolean      to know type of var.
+    echo gettype($completed);  // boolean  to know type of var.
     var_dump($completed);  // boolean(true)
     var_dump($greeting);  // string(9) "hello world"
 
@@ -46,8 +46,14 @@
     $sum = sum(2.5, '3');
     echo $sum; // 5
     var_dump(sum);// int(5)
-$s=(int)'5';
-var_dump($s);
+    $s=(int)'5';
+    $t=(string)true;
+    $y=(int)true;
+    $z=(int)false;
+    var_dump($s);// int(5)
+    var_dump($t);// string(1)"1"
+    var_dump($y);// int(1)
+    var_dump($z);// int(0)
     /*
     declare(strict_types=1)  is restrict data types to know which data accepts
     */
