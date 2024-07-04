@@ -46,11 +46,13 @@
     $sum = sum(2.5, '3');
     echo $sum; // 5
     var_dump(sum);// int(5)
+    $r='5';
     $s=(int)'5';
     $t=(string)true;
     $y=(int)true;
     $z=(int)false;
-    var_dump($s);// int(5)
+    var_dump((int)$r);// int(5)
+    var_dump($s);// int(5)  
     var_dump($t);// string(1)"1"
     var_dump($y);// int(1)
     var_dump($z);// int(0)
