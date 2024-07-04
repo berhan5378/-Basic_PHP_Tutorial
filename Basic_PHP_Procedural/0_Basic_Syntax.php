@@ -31,5 +31,9 @@ echo 'Hello'.$name; // Hello berhan
 echo 'Hello',$name; // Hello berhan
 echo "Hello $name"; // Hello berhan
 echo "Hello {$name}"; // Hello berhan
+$lname ='teshale';
+$fullname=$name. ' ' . $lname; // but this is not work for  $fullname=$name, ' ' , $lname;
+echo $fullname; // berhan teshale
+echo $name, ' ' , $lname; // berhan teshale
 ?>
 <?= 'Hello world'  //Hello world   this equal to <?php echo 'Hello world'\?\> ?> 
