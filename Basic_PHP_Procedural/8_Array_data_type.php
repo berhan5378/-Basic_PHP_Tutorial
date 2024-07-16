@@ -146,5 +146,5 @@ print_r($_array); // Array([1] => baz [ben])
 $_array[0]='fo';
 print_r($_array); // Array([1] => baz [ben] [0]=> fo)   b/c the zero index was unset
 
-var_dump(array_key_exists(1, $_array));
+var_dump(array_key_exists(1, $_array)); // bool(true)
 ?>
