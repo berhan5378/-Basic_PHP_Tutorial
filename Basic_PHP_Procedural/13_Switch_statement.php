@@ -92,8 +92,7 @@ switch($paymentStatus){
 }
 echo "\n";
 /*
-paid
-payment Declined
+paidpayment Declined
 */
 }
 ?>
