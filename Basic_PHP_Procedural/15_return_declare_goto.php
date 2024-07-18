@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1);  // to strict data types
 //return ,goto
 /*
 function sum(int $x , int $y){
@@ -99,12 +99,4 @@ Tick
 Tick
 9
 */
-
-
-function add(int $x , int $y){
-    $z=$x+$y;
-
-    return $z;
-}
-echo add(5,10);
 ?>
