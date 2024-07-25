@@ -31,7 +31,7 @@ endwhile;
 // do-while
 do{
     echo $l++; // excute at list one statement
-}while($i <= 15);
+}while($l <= 15);
 
 // for loop
 for($i=0;$i<15;$i++){
