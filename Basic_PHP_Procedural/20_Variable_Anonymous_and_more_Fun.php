@@ -93,7 +93,7 @@ $arr=[1,2,3,4];
 //or
 
 $arr=[1,2,3,4];
-    $arr2 = array_map(fn($element) => $element*$element,$arr);
+    $arr2 = array_map(fn($element) => $element*$element,$arr); // also we can add var(like $element*$element*$var) in side a function with out use 'use($var)'
 
     print_r($array2);
     /*
