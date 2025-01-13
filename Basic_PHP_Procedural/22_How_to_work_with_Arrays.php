@@ -455,10 +455,91 @@ $arra_y=[1,2,3,4,[5,6]];
 echo $a,$b,$c,$d,"\n";  //1234
 
 [$a,$b, ,$d]=$arra_y;
-echo $a,$b,$d;  //124
+echo $a,$b,$d,PHP_EOL;  //124
 
 [$a,$b, ,$d,[$e,$f]]=$arra_y;
 echo $a,$b,$d,$e,$f,"\n";  //12456
 
 [1=>$a,0=>$b,2=>$c]=$arra_y;
 echo $a,$b,$c;  //213
+
+
+$string='abcdf';
+$arrayy =str_split($string);
+print_r($arrayy);
+/*
+Array
+(
+    [0] => a
+    [1] => b
+    [2] => c
+    [3] => d
+    [4] => f
+)*/
+
+$string1="i am developer";
+$arrayyy=explode(' ',$string1);
+print_r($arrayyy);
+/*
+Array
+(
+    [0] => i
+    [1] => am
+    [2] => developer
+)
+    */
+    $inputArray=[6,2,2,3,4,5,5,4,3];
+    // Use array_count_values() to count values
+$counts = array_count_values($inputArray);
+print_r($counts);
+/*
+Array
+(
+    [6] => 1
+    [2] => 2
+    [3] => 2
+    [4] => 2
+    [5] => 2
+)
+    */
+
+    $j=[1,1,2,3,2,3,4];
+print_r (array_unique($j));
+
+/*
+Array
+(
+    [0] => 1
+    [2] => 2
+    [3] => 3
+    [6] => 4
+)
+    */
+    
+    $prefixSum = array_fill(0, 1, 0);  
+    $op=["aba","bcb","ece","aa","e"]; // to check start and end is vowel
+    $oopp=[[0,2],[1,4],[1,1]]; // to check how many true by this interval
+    /*
+    0 -> TRUE
+    1->FALSE
+    2->TRUE
+    3->TRUE
+    4->TRUE
+
+    (true) $prefixSum[$i + 1] = $prefixSum[$i] + 1 : $prefixSum[$i + 1] = $prefixSum[$i];
+
+     foreach($queries as [$start , $end]) { 
+          $result[] = $prefixSum[$end + 1] - $prefixSum[$start];
+      }
+
+     output= [2,3,0]
+*/
+$xcc=[1,2,3];
+ print_r(array_slice($xcc,1,3)) ;
+ /*Array
+(
+    [0] => 2
+    [1] => 3
+)*/
+$ss_tr=["word","apple","you"];
+//$matches = preg_grep("ap", $ss_tr);
