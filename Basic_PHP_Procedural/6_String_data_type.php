@@ -152,5 +152,6 @@ echo $content . PHP_EOL;//labsczg
 $prefix_="absc";
 echo strpos($v_l,$prefix_); //2  // b/c the string start from 2 by this prefix 
 
-
+$arnum=[1,2];
+echo implode('', $arnum); //12
 ?>
