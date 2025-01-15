@@ -22,4 +22,7 @@ $w=2_000_0;
 $d=(int)'2_000_0';
 var_dump($w); // int(20000)
 var_dump($d); // int(2)
+
+$arr=[2,3];
+echo (int)implode('', $arr);//23
  ?>
